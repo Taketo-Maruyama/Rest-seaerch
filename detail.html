@@ -4,8 +4,8 @@
 <meta charset=utf-8>
  <title>メシサーチ</title>
  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-<link rel="stylesheet" href="sample.css">
-<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+ <link rel="stylesheet" href="sample.css">
+ <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <body>
 <header>
   <div class="head">
@@ -16,7 +16,6 @@
 </header>
 
   <div class="container">
-    <div class="food-search">
 
       <div class="search">
         <p>検索範囲を選択し下の検索ボタンをクリックすると近くの飲食店が検索できます</p>
@@ -32,18 +31,34 @@
         </p><br>
         <input type="button" class="foodsearch" id="submit" onclick="test()" value="飲食店を検索"><br>
         <center>
-         <table id="table" border="1">
+       <!--<table id="table" border="1">
            <tr><th>店舗写真</th><th>店舗名</th><th>アクセス(最寄り駅)</th><th>アクセス(所要時間)</th><th>ぐるなびサイト(PC版)</th></tr>
-         </table>
+         </table> -->
+
+
+
+         <div class="list">
+           <ul class = "shoplist">
+             <li>
+               <div class="card" id = "shopcard">
+               </div>
+
+             </li>
+           </ul>
+        </div>
+
+        <!--
+        
+        -->
+
 
     <script src = "./samplecode.js">
     </script>
-      </div>
-    </div>
-<br>
 
+    </div>
 
   </div>
 </div>
+
 </body>
 </html>
