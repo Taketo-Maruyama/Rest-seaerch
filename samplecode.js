@@ -15,9 +15,6 @@ function successCallback(position) {
 
   var showResult = result => {
     result.rest.map( item => {
-      /*$("#table").append(`<tr><td><img src="${item.image_url.shop_image1}"></td><br>
-      <td>${item.name}</td><br><td>${item.access.station}</td><td>${item.access.walk}分</td><br>
-      <td><a href="${item.url}" target="_blank">${item.url}</a></td></tr>`)*/
 
       $("#shopcard").append(`
         <center>
@@ -32,22 +29,6 @@ function successCallback(position) {
         `)
     })
   }
-
-  /*<img class="card-img"  src="${item.image_url.shop_image1}">
-   <div class="card-content"><h1 class="card-title">${item.name}</h1>
-     <p class="card-text">アクセス:${item.access.station}から${item.access.walk}分</p>
-   </div>
-   <div class="card-link">
-     <a href="${item.url}" target="_blank">About</a>
-   </div>*/
-
-   /*
-   <img class="card-img-top" src="${item.image_url.shop_image1}" alt="Card image cap">
-   <div class="card-block">
-     <h4 class="card-title">${item.name}</h4>
-     <p class="card-text">アクセス:${item.access.station}から${item.access.walk}分</p>
-     <a href="${item.url}" target="_blank" >About</a>
-   */
 
   $( function () {
     const url = "https://api.gnavi.co.jp/RestSearchAPI/v3/"
