@@ -52,7 +52,7 @@ function successCallback(position) {
   $( function () {
     const url = "https://api.gnavi.co.jp/RestSearchAPI/v3/"
     const params = {
-      keyid: "f7914518ec4fd7f05929098f73fa6e49",
+      keyid: "",
       latitude:  "",
       longitude: "",
       range: "",
