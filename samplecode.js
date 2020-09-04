@@ -11,11 +11,12 @@ function successCallback(position) {
   var gl_lati = position.coords.latitude;
       gl_long = position.coords.longitude;
 
-      console.log(gl_lati, gl_long);
 
+//結果を表示する
   var showResult = result => {
     result.rest.map( item => {
 
+//カード形式で表示できるようにhtmlを生成している
       $("#shopcard").append(`
         <center>
         <img class="card-img"  src="${item.image_url.shop_image1}">
@@ -41,25 +42,13 @@ function successCallback(position) {
     }
 
 
-      params.latitude = 34.6661 //gl_lati  //緯度をgeolocationで取得してその値を入れる
-      params.longitude = 133.9177 //gl_long //経度をgeolocationで取得してその値を入れる
-      params.range = $("#distance").val()  //検索範囲は選択されたものがここに代入される
-      params.hit_per_page = 100 //1ページあたりの表示件数
+      params.latitude = gl_lati   //緯度をgeolocationで取得してその値を入れる
+      params.longitude = gl_long  //経度をgeolocationで取得してその値を入れる
+      params.range = $("#distance").val()   //検索範囲は選択されたものがここに代入される
+      params.hit_per_page = 100   //1ページあたりの表示件数
       $.getJSON( url, params, result => {
           showResult( result )
-          console.log(result.total_hit_count)
         })
-      /*while (i * 100 < result.total_hit_count){
-        i++
-        params.latitude = 34.6661 //gl_lati  //緯度をgeolocationで取得してその値を入れる
-        params.longitude = 133.9177 //gl_long //経度をgeolocationで取得してその値を入れる
-        params.range = $("#distance").val()  //検索範囲は選択されたものがここに代入される
-        params.hit_per_page = 100 //1ページあたりの表示件数
-        params.offset_page = i
-        $.getJSON( url, params, result => {
-            showResult( result )
-          })
-      }*/
 
 
   })
