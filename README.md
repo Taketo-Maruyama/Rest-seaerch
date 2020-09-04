@@ -40,7 +40,7 @@ git      ：https://github.com/Taketo-Maruyama/Rest-search
 |sample.html|トップページ。検索ボタンから検索ページに移動できる。|
 |detail.html|検索ページ。検索結果の飲食店を一覧表示する。Aboutから各飲食店のぐるなびのページに移動できる。|
 |samplecode.js|処理を行う部分はここに記述している。|
-|sampleback.rb|Rubyで実装したAPI連携の部分。本サービ上では動作に関与しないが叩き台として掲載。|
+|sampleback.rb|Rubyで実装したAPI連携の部分。本サービス上では動作に関与しないが叩き台として掲載。|
 
 ## 使用しているAPI,SDKなど
 
@@ -55,7 +55,7 @@ git      ：https://github.com/Taketo-Maruyama/Rest-search
 ## こだわったポイント
 
 - 一覧表示はできるだけシンプルに表示するようにした。
-- ぐるなびサイトへのリンクを貼ることで予約しやすくなるようにした
+- ぐるなびサイトへのリンクを貼ることで予約しやすくなるようにした。
 
 
 ## アドバイスして欲しいポイント
@@ -64,7 +64,7 @@ git      ：https://github.com/Taketo-Maruyama/Rest-search
 - APIを叩いて返ってきたjsonファイルを店舗ごとに別々のファイルに分ける方法
 (一覧で表示する際店舗を横並びに表示することを想定していたが１つのjsonであるため縦に並んでしまう、詳細表示するにも必要と考えている)
 - バックエンド(Ruby)の実装(sampleback.rbにAPIを叩く部分は実装している)
--
+
 
 ## その他、申し送り
 
